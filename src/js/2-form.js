@@ -29,6 +29,9 @@ elForm.addEventListener('submit', event => {
     alert('Fill please all fields');
   } else {
     console.log(formData);
+    console.log(elInputMess.value);
+    console.log(elInputEmail.value);
+
     localStorage.removeItem('feedback-form-state');
     formData.email = formData.message = '';
     elInputEmail.value = elInputMess.value = '';
