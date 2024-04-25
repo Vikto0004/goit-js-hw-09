@@ -30,5 +30,7 @@ elForm.addEventListener('submit', event => {
   } else {
     console.log(formData);
     localStorage.removeItem('feedback-form-state');
+    formData.email = formData.message = '';
+    elInputEmail.value = elInputMess.value = '';
   }
 });
