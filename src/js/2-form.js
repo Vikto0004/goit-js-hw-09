@@ -12,7 +12,6 @@ elForm.addEventListener('input', () => {
   formData.message = elInputMess.value.trim();
 
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
-  console.log(JSON.stringify(formData));
 });
 
 if (localStorage.getItem('feedback-form-state')) {
